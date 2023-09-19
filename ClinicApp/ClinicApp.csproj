@@ -87,6 +87,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="HelperClasses\DateBirthToAgeConverter.cs" />
     <Compile Include="Migrations\201711021256133_InitialCreate.cs" />
     <Compile Include="Migrations\201711021256133_InitialCreate.Designer.cs">
       <DependentUpon>201711021256133_InitialCreate.cs</DependentUpon>
