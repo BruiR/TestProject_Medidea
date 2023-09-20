@@ -34,6 +34,8 @@ namespace ClinicApp.XamlPages
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             datePickerRequest.SelectedDate = DateTime.Now;
+            datePickerRequest.BlackoutDates.Add(
+                new CalendarDateRange(new DateTime(1, 1, 1), new DateTime(1753, 1, 1)));
         }
 
         private async void btnSubmit_Click(object sender, RoutedEventArgs e)
