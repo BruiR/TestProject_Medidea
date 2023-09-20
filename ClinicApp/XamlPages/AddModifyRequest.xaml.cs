@@ -67,6 +67,11 @@ namespace ClinicApp.XamlPages
                     status = false;
                     messageBuilder.Append("Дата обращения - обязательное поле для ввода.\n");
                 }
+                else if (dateOfRequest > DateTime.Now)
+                {
+                    status = false;
+                    messageBuilder.Append("Введите дату обращения корректно.\n");
+                }
                 #endregion
                 #region Checking entered purpose of request
                 if (String.IsNullOrEmpty(purpose))
